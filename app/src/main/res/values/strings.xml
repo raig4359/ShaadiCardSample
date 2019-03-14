@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Shaadi Card Sample</string>
+  <string name="error_message">Can\'t connect right now, try again later</string>
+  <string name="user_list_title">Shaadi Cards</string>
+  <string name="yrs">yrs</string>
+  <string name="accept">Accept</string>
+  <string name="decline">Decline</string>
+</resources>

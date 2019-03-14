@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="6dp">
+
+    <android.support.constraint.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingBottom="20dp">
+
+      <ImageView
+        android:id="@+id/iv_user"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="25dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/bg_profile_pic_shadow"
+        android:padding="1dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_man_default" />
+
+      <TextView
+        android:id="@+id/tv_timeline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/grey"
+        android:textSize="14sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_user"
+        tools:text="few hours ago" />
+
+      <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/light_blue"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_user"
+        tools:text="Arthur Brian" />
+
+      <TextView
+        android:id="@+id/tv_profile_summary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_user_name"
+        app:layout_constraintWidth_percent="0.75"
+        tools:text="45yrs, 5' 10, Gujarati, Shwetamber Mumbai, India, Bachelor - Commerce Business Owner / Entrepreneur" />
+
+      <ImageButton
+        android:id="@+id/bt_decline"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_grey_circle"
+        android:src="@drawable/ic_clear"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/bt_accept"
+        app:layout_constraintTop_toBottomOf="@+id/tv_profile_summary" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/decline"
+        app:layout_constraintLeft_toLeftOf="@+id/bt_decline"
+        app:layout_constraintRight_toRightOf="@+id/bt_decline"
+        app:layout_constraintTop_toBottomOf="@+id/bt_decline" />
+
+      <ImageButton
+        android:id="@+id/bt_accept"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_check"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_gradient_circle"
+        app:layout_constraintLeft_toRightOf="@+id/bt_decline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_profile_summary" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/accept"
+        app:layout_constraintLeft_toLeftOf="@+id/bt_accept"
+        app:layout_constraintRight_toRightOf="@+id/bt_accept"
+        app:layout_constraintTop_toBottomOf="@+id/bt_accept" />
+
+    </android.support.constraint.ConstraintLayout>
+
+  </android.support.v7.widget.CardView>
+</layout>
